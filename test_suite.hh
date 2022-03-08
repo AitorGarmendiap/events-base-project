@@ -192,7 +192,7 @@ TEST( "Member function handler initialization",
     SUCCEED();
 }
 
-/*
+
 // [ Test #7 ] -------------------------------------------------------
 TEST( "Member function handler manual event dispatching",
       "Concrete member function handler should delegate to the registered member function call through the specific class instance that was provided on instantiation." )
@@ -275,7 +275,7 @@ TEST( "Member function handlers interacting with stateful objects and events",
 
     ASSERT_THAT( soldier.get_position() == Coordinates(20, 83) );
 }
-
+/*
 // Event that simulates having a GUI button clicked
 struct ButtonClickedEvent : cs225::Event
 {

@@ -23,6 +23,15 @@ namespace cs225
     template <typename T, typename E>
     class MemberFunctionHandler
     {
-        
+    public:
+        using MemberFunction = void (T::*)(const E&);
+        MemberFunctionHandler(T* obj, MemberFunction mf) : instance{obj}, handler_fn{mf} {}
+        void handle(const E& event)
+        {
+            (instance->*handler_fn)(event);
+        }
+    private:
+        T* instance;
+        MemberFunction handler_fn;
     }
 }

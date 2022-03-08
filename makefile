@@ -2,7 +2,7 @@
 # CS225 event system assignment makefile
 # -------------------------------
 
-FLAGS=-Wall -Wextra -Wpedantic -g -std=c++03
+FLAGS=-Wall -Wextra -Wpedantic -g -std=c++11
 
 # comment/uncomment the following line to toggle verbosity 
 #FLAGS+=-DVERBOSE
