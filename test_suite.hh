@@ -275,7 +275,7 @@ TEST( "Member function handlers interacting with stateful objects and events",
 
     ASSERT_THAT( soldier.get_position() == Coordinates(20, 83) );
 }
-/*
+
 // Event that simulates having a GUI button clicked
 struct ButtonClickedEvent : cs225::Event
 {
@@ -357,7 +357,7 @@ TEST( "Event handler multiple handler function registration",
 
 } // namespace Events
 } // namespace Tests
-*/
+
 
 // ===========================================================================
 // ===========================================================================
@@ -369,7 +369,7 @@ TEST( "Event handler multiple handler function registration",
 /*********************************************************************
  *                      Event dispatcher tests                       *
  *********************************************************************/
-/*
+
 namespace Tests { namespace EventDispatcher
 {
 
@@ -411,7 +411,7 @@ TEST( "Event dispatcher implements the singleton pattern",
 
     SUCCEED();
 }
-
+/*
 // more dummy classes for testing purposes
 struct EverythingIsOnFireEvent : public cs225::Event {};
 struct MyPhoneIsVibratingEvent : public cs225::Event {};
